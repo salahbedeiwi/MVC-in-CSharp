@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Sample Page Redirected to SampleView Page</title>
+</head>
+<body>
+    <div> 
+        <h1>Welcome to Sample Page</h1>
+        <ul>
+            <li>Your name is @TempData["Name"]</li>
+            <li>Today's date is @TempData["TodayDate"]</li>
+            <li>Your age is @ViewData["age"]</li>
+            <li>Your School is @ViewData["school"]</li>
+            <li>Your Status is @Session["Active"]</li>
+        </ul>
+    </div>
+</body>
+</html>

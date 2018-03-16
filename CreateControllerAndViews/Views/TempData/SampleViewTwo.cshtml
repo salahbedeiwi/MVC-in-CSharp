@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SampleViewTwo</title>
+</head>
+<body>
+    <div> 
+        <h1>Welcome to Sample Page Two</h1>
+        <ul>
+            <li>Your Name is @ViewData["nameIs"]</li>
+            <li>Your date is @ViewData["callMyDate"]</li>
+            <li>Your Status is @Session["Active"]</li>
+        </ul>
+    </div>
+</body>
+</html>

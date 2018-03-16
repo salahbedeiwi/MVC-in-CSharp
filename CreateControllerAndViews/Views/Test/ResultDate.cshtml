@@ -1,0 +1,29 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ResultDate</title>
+</head>
+<body>
+    <div> 
+        <!-- Show results form ViewData -->
+        <!-- Test/ResultDate -->
+        <h1>@ViewData["name"].ToString().ToUpper(), time is @ViewData["date"].</h1>
+        <h2>Hello @ViewData["name"], your age is @ViewData["age"].</h2>
+
+        <!-- Test/ResultDateBag -->
+        <h3>Address: @ViewBag.address.ToString().ToUpper()</h3>
+        <!-- Note i used ViewData["phone"] & it was initialized it as ViewBag.phone and vice-versa -->
+        <h4>Phone: @ViewData["phone"]</h4> 
+        <h4>Class Name: @ViewBag.classes[0]</h4>
+        <h4>Class Credits: @ViewBag.classes[1]</h4>
+        <h4>Class GPA: @ViewBag.classes[2]</h4>
+        <h4>College Name : @ViewBag.schools[0]</h4>
+        <h4>High School Name : @ViewBag.schools[1]</h4>
+        <h4>University Name : @ViewBag.schools[2]</h4>
+    </div>
+</body>
+</html>
